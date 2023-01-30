@@ -10,6 +10,16 @@ body {
   color: var(--primary-tex-color);
   margin: 0;
 }
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
 a {
   text-decoration: none;
 }
@@ -31,6 +41,13 @@ ul {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
+}
+.container {
+  width: 1440px;
+  margin: 0 auto;
+  padding: 0 15px;
+  outline: 2px solid green;
+  box-sizing: border-box;
 }
 
 /* Header */
@@ -73,12 +90,19 @@ ul {
 
 .section-main {
   background-color: #2e2f42;
+  box-sizing: border-box;
+  padding-top: 188px;
+  padding-bottom: 188px;
+  text-align: center;
 }
 .main-tex {
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
   color: var(--color-fone);
+  margin: 0 auto;
+
+  padding-bottom: 48px;
 }
 .button {
   font-family: inherit;
@@ -99,18 +123,26 @@ ul {
 }
 /* --------Section-info----------- */
 
+.section-info {
+  box-sizing: border-box;
+  margin: 120px 0 120px 0;
+}
+
 .info-text {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: inherit;
+  width: 264px;
+  text-align: center;
 }
 .info-title {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--title-tex-color);
+  width: 264px;
 }
 
 /* --------What are we doing--------- */
@@ -120,11 +152,15 @@ ul {
   line-height: 1.11;
   letter-spacing: 0.02em;
   color: inherit;
+  text-align: center;
 }
 
 /* -----team-section------ */
 .team-section {
   background-color: #f4f4fd;
+}
+.work-list {
+  margin-top: 72px;
 }
 .team-text {
   font-size: 36px;
