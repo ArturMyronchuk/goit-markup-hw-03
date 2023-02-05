@@ -211,6 +211,7 @@ address {
   color: inherit;
   text-align: center;
   margin-bottom: 72px;
+  text-transform: capitalize;
 }
 
 /* -----team-section------ */
